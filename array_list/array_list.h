@@ -14,5 +14,6 @@ Array_list *array_list_add_end(Array_list *array_list, int data);
 Array_list *array_list_add_pos(Array_list *array_list, int data, int pos);
 Array_list *array_list_remove_pos(Array_list *array_list, int pos);
 Array_list *array_list_print(Array_list *array_list);
+void array_list_destroy(Array_list *array_list);
 
 #endif
