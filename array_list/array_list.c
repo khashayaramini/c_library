@@ -1,7 +1,4 @@
 #include "array_list.h"
-#include <stdlib.h>
-// #include <stdio.h>
-// #include <stdlib.h>
 
 Array_list *array_list_create(int length){
   Array_list *array_list = malloc(sizeof(Array_list));
@@ -56,4 +53,10 @@ Array_list *array_list_remove_pos(Array_list *array_list, int pos){
     array_list->list[i] = array_list->list[i+1];
   array_list->last--;
   return array_list;
+}
+Array_list *array_list_print(Array_list *array_list){
+  printf("[");
+  for(int i = 0; i <= array_list->last; i++)
+    printf(" %d, ", array_list->list[i]);
+  printf("]");
 }
